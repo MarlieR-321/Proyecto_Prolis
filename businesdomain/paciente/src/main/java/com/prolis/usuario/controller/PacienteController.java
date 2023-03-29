@@ -27,7 +27,7 @@ public class PacienteController {
 
     // http://localhost:8080/api/pacientes
     @GetMapping
-    public ResponseEntity<List<Paciente>> listarPacientes(){
+    public ResponseEntity<List<Paciente>> listarPacientes(){    
         List<Paciente> pxs = px_service.obtenerPacientes();
         return new ResponseEntity<>(pxs, HttpStatus.OK);
     }
